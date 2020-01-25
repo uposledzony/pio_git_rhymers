@@ -2,6 +2,7 @@ package edu.kis.vh.nursery;
 
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
+    //TODO It isn't necessary method - we currently subclassing DefaultCountingOutRhymer and we have access from FIFORhymer to public and protected properties and methods of DefaultCountingOutRhymer.
     public DefaultCountingOutRhymer getTemp() {
         return temp;
     }

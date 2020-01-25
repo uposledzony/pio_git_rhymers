@@ -6,6 +6,7 @@ import edu.kis.vh.nursery.HanoiRhymer;
 
 public class DefaultRhymersFactory implements RhymersFactory {
 
+	//TODO I think, that it should be one method that returns specified Rhymer object by reflection mechanism, or by switch case approach instead of four methods provided below for instance factory.of("FIFO").
 	@Override
 	public DefaultCountingOutRhymer getStandardRhymer() {
 		return new DefaultCountingOutRhymer();

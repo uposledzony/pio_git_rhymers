@@ -10,6 +10,8 @@ public class IntLinkedList {
 
 
     private Node last;
+
+    //TODO Is limitation necessary for this class? Better solution could be create IntLimitedLinkedList that inherits behaviour of IntLinkedList and moreover adds limitation of size.
     private int i;
 
     public void push(int i) {
@@ -26,6 +28,7 @@ public class IntLinkedList {
         return last == null;
     }
 
+    //TODO it is needed to specify implementation of this method to indicate if list is full or not (or remove if field 'i' for size limitation is not necessary in this class).
     public boolean isFull() {
         return false;
     }
@@ -44,6 +47,7 @@ public class IntLinkedList {
         return ret;
     }
 
+    //TODO specify if this method is necessary in this class.
     public int getI() {
         return i;
     }
